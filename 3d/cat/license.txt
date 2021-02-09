@@ -1,0 +1,11 @@
+Model Information:
+* title:	Origami cat
+* source:	https://sketchfab.com/3d-models/origami-cat-e52cb1cd4e38477a88c406f111715d71
+* author:	Evil_KatZz (https://sketchfab.com/Evil_KatZz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Origami cat" (https://sketchfab.com/3d-models/origami-cat-e52cb1cd4e38477a88c406f111715d71) by Evil_KatZz (https://sketchfab.com/Evil_KatZz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

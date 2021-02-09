@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+body{
+    font-family: 'Hanalei', cursive;
+    font-weight: bolder;
+}
+a-scene {
+    height: 100%;
+    width: 100%;
+}
+
+#playBtn{
+    font-size:4em;
+    position: absolute;
+    margin: auto;
+    top:25%;
+    left:40%;
+    width:auto;
+    background:white;
+    z-index:1000;
+    padding:1em;
+}
+
+#Win{
+    font-size:4em;
+    position: absolute;
+    margin: auto;
+    top:25%;
+    left:40%;
+    width:auto;
+    background:green;
+    z-index:1000;
+    visibility: hidden;
+    padding:2em;
+    color:white;
+}
+
+#restart{
+    background:white;
+    font-size:1em;
+    display: block;
+}
+
+.timer{
+    position: absolute;
+    top:5%;
+    left:0;
+    background:white;
+    z-index:1000;
+    font-size:2em;
+    padding:10px;
+}
+
+.cubes{
+    position: absolute;
+    top:5%;
+    left:85%;
+    background:white;
+    z-index:1000;
+    font-size:2em;
+    width:200px;
+    padding:10px;
+}
+
+.whiteCubes{
+    position: absolute;
+    top:20%;
+    left:85%;
+    background:white;
+    z-index:1000;
+    font-size:2em;
+    width:200px;
+    padding:10px;
+}

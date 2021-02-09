@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chase the Cats</title>
+    <!--    javascript and dependencies AFRAME, custum js etc-->
+    <script src="js/utils.js"></script>
+    <!--    <script src="js/aframe.min.js"></script>-->
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="js/aframe-physics-system.min.js"></script>
+    <script src="js/aframe-extras.min.js"></script>
+<!--    <script src="js/aframe-environment-component.min.js"></script>-->
+    <script src="js/aframe-mountain-component.min.js"></script>
+    <script src="js/simple-sun-sky.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<audio id="pickup" src="sound/cat_screech.wav"></audio>
+<div class="timer">
+    Time Elapsed: <span id="timeLeft"></span> / <span id="totalTime"></span>
+</div>
+<div class="cubes">
+    Cats on the loose: <span id="cubesCreated"></span>
+</div>
+<div class="whiteCubes">
+    Cats Remaining: <span id="cubesLeft"></span> / <span id="totalCubes"></span>
+</div>
+<div id="playBtn">Start</div>
+<div id="Win">YOU WON
+    <button id="restart">Restart</button>
+</div>
+
+<a-scene physics="debug: false; gravity: -9.8;">
+    <a-simple-sun-sky sun-position="1 0.1 0"></a-simple-sun-sky>
+    <a-mountain color="rgb(139,69,19)"></a-mountain>
+    <a-assets>
+        <img id="grass" src="tex/grass.jpg">
+        <img id="sky" src="tex/sky.jpg">
+        <a-asset-item id="catmodel" src="3d/cat/scene.gltf"></a-asset-item>
+        <a-asset-item id="treemodel" src="3d/tree/scene.gltf"></a-asset-item>
+
+    </a-assets>
+    <a-entity id="rig" position="1 1 0" >
+        <a-entity id="camera" kinematic-body player physics-body="mass: 90; boundingBox: 10 5 10"   wasd-controls camera position="25 0 0"
+                  look-controls></a-entity>
+    </a-entity>
+            <!--        <a-entity environment="preset: forest; seed:15; ground: hills; "></a-entity>-->
+
+    <a-plane material="src:#grass; repeat:200 200" static-body rotation="-90 0 0" position="0 0 0" width="800"
+             height="800"></a-plane>
+<!--    <a-sky src="#sky"></a-sky>-->
+</a-scene>
+
+</body>
+</html>
